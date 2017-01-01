@@ -1,0 +1,174 @@
+$link_colour: #1C1C1B
+$text_colour: #1C1C1B
+$bg_colour: #E9E9E9
+$link_hover: #383838
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700)
+@import normalize
+
+
+body
+  width: 100%
+  max-width: 100%
+  font-family: 'Raleway', sans-serif
+
+.content_container
+  width: 1200px
+  height: 100%
+  margin: 0px auto
+  position: relative
+
+header
+  position: relative
+  width: 1200px
+  height: 80px
+  background-color: white
+
+  .logo
+    position: relative
+    width: 500px
+    height: 80px
+    display: inline-block
+    background-color: $bg_colour
+
+    h1
+      line-height: 40px
+      color: $text_colour
+      margin-left: 15px
+
+
+  nav
+    width: 700px
+    height: 80px
+    position: relative
+    display: inline-block
+    float: right
+    background-color: $bg_colour
+
+    ul
+      list-style: none
+      text-decoration: none
+      width: 700px
+      height: 80px
+      position: relative
+
+      li, a
+        text-decoration: none
+        color: $link_colour
+        display: inline-block
+        width: 170px
+        height: 80px
+        margin: 0 0
+        line-height: 40px
+        font-weight: 700
+
+.hero_post
+  width: 1200px
+  height: 800px
+  background:
+    image: url(image_path('Drake_Test.png'))
+    size: cover
+    position: bottom center
+
+.label
+  width: 300px
+  height: 100px
+  padding-left: 5px
+  border-left: 10px solid $text_colour
+  color: $text_colour
+  background-color: $bg_colour
+
+hr
+  margin: 30px 0
+  border: 1px solid $bg_colour
+
+.recents
+  width: 600px
+  height: 550px
+  margin-bottom: 30px
+  border-right: 1px solid $bg_colour
+  display: block
+  float: left
+
+.cafe_recent
+  width: 600px
+  height: 100px
+
+
+.img_box
+  width: 100px
+  height: 100px
+  float: left
+  background:
+    image: url(image_path('Drake_Test.png'))
+    size: contain
+    repeat: no-repeat
+
+.cafe_title
+  width: 490px
+  margin-left: 110px
+  position: relative
+
+  h4
+    font-size: 14px
+
+  p
+    font-size: 10px
+
+.popular
+  width: 589px
+  height: 550px
+  display: inline-block
+  float: right
+  clear: none
+  margin-left: 10px
+  margin-bottom: 30px
+
+
+  h3
+    margin-left: 20px
+
+.popular_cafe
+  width: 200px
+  height: 200px
+  display: inline-block
+  float: left
+  margin-left: 50px
+  margin-bottom: 20px
+
+.img_box_popular
+  width: 200px
+  height: 200px
+  background:
+    image: url(image_path('Drake_Test.png'))
+    size: contain
+
+.label_popular
+  width: 200px
+  height: 200px
+  text-align: center
+  line-height: 200px
+
+footer
+  width: 1200px
+  height: 250px
+  padding-top: 50px
+  position: relative
+  background-color: $bg_colour
+  text-align: center
+
+  p
+    font-size: 10px
+
+  ul
+    list-style: none
+    width: 600px
+    margin: 0 auto
+
+    li, a
+      color: $text_colour
+      display: inline-block
+      margin: 10px 30px 10px 0
+
+      &:hover
+        color: $link_hover

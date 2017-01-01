@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <script src="https://use.fontawesome.com/112ad787b9.js"></script>
+  <title>Cherry Bites</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="content_container">
+    <header>
+      <div class="logo">
+        <h1>Cherry Bites</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><%= link_to "Home", root_path%></li>
+          <li><%= link_to "Posts", posts_path %></li>
+          <li><%= link_to "About", about_index_path %></li>
+          <li><%= link_to "Contact", new_contact_path %></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <%= yield %>
+    <hr>
+    <footer>
+      <h5>Get Social...</h5>
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+      <p>&copy Cherry Bites 2017. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
