@@ -1,8 +1,10 @@
 <div class="hero_post">
+  <% @posts.each do |post| %>
   <div class="label">
-    <h2>Drake Eatery</h2>
-    <p>Bondi Beach | NSW</p>
+    <h2><%= post.name %></h2>
+    <p><%=post.adress %></p>
   </div>
+  <% end %>
 </div>
 <hr>
 <div class="recents">
