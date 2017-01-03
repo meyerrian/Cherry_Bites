@@ -1,13 +1,13 @@
 <% @posts.each do |post| %>
 <div class="hero_post">
   <div class="label">
-    <h2><%= post.name %></h2>
+    <h2><%= link_to post.name, post %></h2>
     <p><%=post.address %></p>
   </div>
   <% if post.image.exists? %>
     <%= image_tag post.image.url(:large) %>
   <% end %>
-  <% end %>
+<% end %>
 </div>
 <hr>
 <div class="recents">
