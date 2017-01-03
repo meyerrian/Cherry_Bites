@@ -12,62 +12,22 @@
 <hr>
 <div class="recents">
   <h3>Most Recent Bites</h3>
+  <% @recents.each do |recent| %>
   <div class="cafe_recent">
     <div class="img_box">
+      <% if recent.image.exists? %>
+        <%= image_tag recent.image.url(:thumb) %>
+      <% end %>
     </div>
     <div class="cafe_title">
-      <h4>North Bondi Fish</h4>
-      <p>North Bondi | NSW</p>
+      <h4><%= recent.name %></h4>
+      <p><%= recent.address %></p>
     </div>
   </div>
-    <div class="cafe_recent">
-      <div class="img_box">
-      </div>
-      <div class="cafe_title">
-        <h4>North Bondi Fish</h4>
-        <p>North Bondi | NSW</p>
-      </div>
-    </div>
-      <div class="cafe_recent">
-        <div class="img_box">
-        </div>
-        <div class="cafe_title">
-          <h4>North Bondi Fish</h4>
-          <p>North Bondi | NSW</p>
-        </div>
-      </div>
-      <div class="cafe_recent">
-        <div class="img_box">
-        </div>
-        <div class="cafe_title">
-          <h4>North Bondi Fish</h4>
-          <p>North Bondi | NSW</p>
-        </div>
-      </div>
-  </div>
+  <% end %>
+</div>
   <div class="popular">
     <h3>Popular Bites</h3>
-    <div class="popular_cafe">
-      <div class="img_box_popular">
-        <div class="label_popular">
-          <h4>Fish Bowl</h4>
-        </div>
-      </div>
-    </div>
-    <div class="popular_cafe">
-      <div class="img_box_popular">
-        <div class="label_popular">
-          <h4>Fish Bowl</h4>
-        </div>
-      </div>
-    </div>
-    <div class="popular_cafe">
-      <div class="img_box_popular">
-        <div class="label_popular">
-          <h4>Fish Bowl</h4>
-        </div>
-      </div>
-    </div>
     <div class="popular_cafe">
       <div class="img_box_popular">
         <div class="label_popular">
