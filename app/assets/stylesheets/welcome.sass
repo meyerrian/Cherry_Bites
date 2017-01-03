@@ -64,11 +64,14 @@ header
 
 .hero_post
   width: 1200px
-  height: 800px
-  background:
-    image: url(image_path('Drake_Test.png'))
-    size: cover
-    position: bottom center
+  height: 1200px
+
+  img
+    position: relative
+    display: inline
+    z-index: -9999
+    margin-top: -100px
+
 
 .label
   width: 300px
@@ -77,6 +80,8 @@ header
   border-left: 10px solid $text_colour
   color: $text_colour
   background-color: $bg_colour
+  position: relative
+  display: block
 
 hr
   margin: 30px 0

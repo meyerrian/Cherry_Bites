@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'redcarpet', '~> 3.2.2'
 
+gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.6', '>= 2.6.43'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

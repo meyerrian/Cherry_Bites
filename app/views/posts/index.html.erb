@@ -1,12 +1,15 @@
 <h1>Previous Bites Listed Below...</h1>
 <% @posts.each do |post| %>
 <div class="prev_bites">
-  <div class="prev_img"></div>
+  <div class="prev_img">
+    <% if post.image.exists? %>
+      <%= image_tag post.image.url(:medium) %>
+    <% end %>
+</div>
   <div class="prev_info">
     <h2><%= link_to post.name, post %></h2>
     <p><%= post.address %></p>
     <p>Rating | <%= post.rating %></p>
-    <p class="art_content"><% post.content %></p>
   </div>
 </div>
 <% end %>
