@@ -2,7 +2,7 @@
 <div class="hero_post">
   <div class="label">
     <h2><%= link_to post.name, post %></h2>
-    <p><%=post.address %></p>
+    <p><%=link_to post.address, post %></p>
   </div>
   <% if post.image.exists? %>
     <%= image_tag post.image.url(:large) %>
@@ -20,8 +20,8 @@
       <% end %>
     </div>
     <div class="cafe_title">
-      <h4><%= recent.name %></h4>
-      <p><%= recent.address %></p>
+      <h4><%= link_to recent.name, recent %></h4>
+      <p><%= link_to recent.address, recent %></p>
     </div>
   </div>
   <% end %>
@@ -31,7 +31,7 @@
   <% @popular.each do |populr| %>
   <div class="popular_cafe">
     <div class="label_popular">
-      <h4><%= populr.name %></h4>
+      <h4><%= link_to populr.name, populr %></h4>
     </div>
     <%= image_tag populr.image.url(:medium) %>
   </div>
