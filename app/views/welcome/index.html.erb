@@ -28,11 +28,14 @@
 </div>
   <div class="popular">
     <h3>Popular Bites</h3>
+    <% @popular.each do |populr| %>
     <div class="popular_cafe">
       <div class="img_box_popular">
+        <%= image_tag populr.image.url(:medium) %>
         <div class="label_popular">
-          <h4>Fish Bowl</h4>
+          <h4><%= populr.name %></h4>
         </div>
       </div>
     </div>
   </div>
+  <% end %>
