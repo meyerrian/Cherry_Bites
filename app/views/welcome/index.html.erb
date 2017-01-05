@@ -22,6 +22,7 @@
     <div class="cafe_title">
       <h4><%= link_to recent.name, recent %></h4>
       <p><%= link_to recent.address, recent %></p>
+      <p><%= link_to truncate(recent.content, :length => 170), recent %></p>
     </div>
   </div>
   <% end %>
